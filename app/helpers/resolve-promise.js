@@ -18,6 +18,6 @@ export default Ember.Helper.extend({
     if (isFulfilled) {
       return value._result;
     }
-    return value._result;
+    return `Error: ${value._result}`;
   }
 });
